@@ -3,13 +3,13 @@
     <div class="row">
       <div class="col">{{name}}</div>
       <div class="col">
-        <img (click)="deleteCard()" class="delete-icon" src="../../assets/delete-icon.png">
+        <img (click)="deleteCard()" class="delete-icon" src="../../assets/delete-icon.png" alt="Delete Icon">
       </div>
     </div>
   </div>
   <div class="card-body"> <!--isLoading true/false-->
     <div *ngIf="!isLoading">
-      <img [src]="imageSource">
+      <img src="http://openweathermap.org/img/wn/{{imageSource}}.png" alt="Weather Icon">
       <div>{{currentTemperature}} °C</div>
     </div>
     <div *ngIf="isLoading">
