@@ -1,0 +1,14 @@
+<div class="container">
+  <label class="form-label">Pilsēta</label>
+  <input #city class="form-control">
+  <button class="my-2 btn btn-primary" (click)="addCity(city.value)">
+    Pievienot
+  </button>
+
+  <div class="row">
+    <div *ngFor="let city of cityList" class="col-sm-2">
+      <app-city-weather-card [name]="city"
+                             (onDelete)="deleteCity($event)"></app-city-weather-card>
+    </div>
+  </div>
+</div>

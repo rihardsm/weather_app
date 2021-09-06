@@ -1,0 +1,12 @@
+img{
+  width: 90%;
+}
+
+.delete-icon{
+  width: 30%;
+  cursor: pointer;
+}
+
+.card{
+  height: 220px;
+}
